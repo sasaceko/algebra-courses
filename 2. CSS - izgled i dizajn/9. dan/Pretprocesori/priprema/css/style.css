@@ -1,0 +1,43 @@
+body {
+  background-color: #eee;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body h1 {
+  color: #f93;
+  font: 98px Georgia, serif;
+  text-align: center;
+  text-shadow: 2px 2px 1px gray;
+  -webkit-animation: fadein 1.5s ease-in 1s backwards;
+          animation: fadein 1.5s ease-in 1s backwards;
+}
+body h3 {
+  color: dodgerblue;
+  font: 78px Georgia, serif;
+  text-align: center;
+  text-shadow: 2px 2px 1px gray;
+  -webkit-animation: fadein 1.5s ease-in 2.5s backwards;
+          animation: fadein 1.5s ease-in 2.5s backwards;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

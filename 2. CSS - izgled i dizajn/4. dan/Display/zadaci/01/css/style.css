@@ -1,0 +1,9 @@
+p {
+    display: inline-block;
+    border: 1px solid gray;
+    background-color: lightgray;
+    width: 33%;
+    box-sizing: border-box;
+    margin-left: -6px;
+    padding: 10px;
+}

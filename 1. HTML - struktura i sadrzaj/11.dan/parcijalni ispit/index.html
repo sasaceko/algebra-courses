@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saša Čeko">
+    <meta name="keywords" content="Turistička agencija, Avanturist, djelatnosti, kontakt">
+    <meta name="description" content="Turistička agencija Avanturist - posjetite nas ukoliko se želite zabaviti">
+    <title>Turistička agencija ‘’Avanturist’’</title>
+</head>
+<body>
+    <header>
+        <h1>Turistička agencija ‘’Avanturist’’</h1>
+        <nav>
+            <ul>
+                <li><a href="#o-nama"><p>O nama</p></a></li>
+                <li><a href="#nase-djelatnosti"><p>Naše djelatnosti</p></a></li>
+                <li><a href="#kontakt"><p>Kontakt</p></a></li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+    <main>
+        <h2>Turistička agencija ‘’Avanturist’’</h2>
+        <section>
+            <h3 id="o-nama">O nama</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita voluptate dicta rerum cupiditate, illum iure reprehenderit sunt veniam impedit quam quia vitae eum fugit quaerat consectetur saepe? Rerum est vero delectus quod, ducimus soluta, cumque voluptatum illo id repellat eaque iure mollitia incidunt facilis dicta. Cum quasi ratione blanditiis.</p>
+            <img src="slike/o-nama/team.jpg" alt="People working in a team on project" width="760px" height="430px">
+        </section>
+        <section>
+            <h3 id="nase-djelatnosti">Naše djelatnosti</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita voluptate dicta rerum cupiditate, illum iure reprehenderit sunt veniam impedit quam quia vitae eum fugit quaerat consectetur saepe? Rerum est vero delectus quod, ducimus soluta, cumque voluptatum illo id repellat eaque iure mollitia incidunt facilis dicta. Cum quasi ratione blanditiis.</p>
+            <img src="slike/o-nama/adventure.jpg" alt="Picture with travel quote" width="760px" height="430px">
+        </section>
+        <aside>
+            <h3 id="kontakt">Kontakt</h3>
+            <form action="“includes/kontakt.php" method="post" enctype="multipart/form-data">
+                <label for="ime-prezime">Ime i Prezime</label><br />
+                <input type="text" name="ime-prezime" id="ime-prezime" required>
+                <br />
+                <br />
+                <label for="email">E-mail</label><br />
+                <input type="email" name="email" id="email" required>
+                <br />
+                <br />
+                <label for="poruka">Poruka</label><br />
+                <textarea name="poruka" id="poruka" cols="40" rows="5"></textarea>
+                <br />
+                <br />
+                <button type="submit">Pošalji poruku</button>
+            </form>
+        </aside>
+        <hr />
+    </main>
+    <footer>
+        <p><i>Avanturist &copy; 2022.</i></p>
+        <a href="mailto:ceko.sasa@gmail.com"><img src="slike/logo/mail.png" alt="e-mail logo"></a>
+    </footer>
+</body>
+</html>

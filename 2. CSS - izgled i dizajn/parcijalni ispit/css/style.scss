@@ -1,0 +1,72 @@
+@import 'base/reset';
+@import 'base/colors';
+@import 'base/spacings';
+@import 'base/media';
+@import 'abstracts/mixins';
+
+body {
+    @include flex-container;
+    @include background-img('../slike/blur-clean.jpg');
+
+    div {
+        @include div-style;
+        margin: $margin-40;
+    }
+    
+    div:first-child {
+        background-color: $black-transparent;
+        @include animation('appear 1.5s ease-out 0.5s backwards');
+    }
+
+    div:nth-child(2) {
+        background-color: $red-transparent;
+        @include animation('appear 1.5s ease-out 2s backwards');
+    }
+
+    div:last-child {
+        background-color: $orange-transparent;
+        @include animation('appear 1.5s ease-out 3.5s backwards');
+    }
+}
+
+@include respondTo(mobile) {
+    body {
+            flex-direction: column;
+
+        div {
+            margin: $margin-20;
+        }
+        
+        div:first-child {
+                @include animation('appear-mobile 1.5s ease-out 0.5s backwards')
+        }
+    
+        div:nth-child(2) {
+                @include animation('appear-mobile 1.5s ease-out 2s backwards')
+        }
+    
+        div:last-child {
+                @include animation('appear-mobile 1.5s ease-out 3.5s backwards')
+        }
+    }
+}
+
+@include keyframes(appear) {
+    0% {
+        transform: translateY(-700px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@include keyframes(appear-mobile) {
+    0% {
+        transform: translateX(-700px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

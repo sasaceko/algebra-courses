@@ -1,0 +1,12 @@
+Vaš zadatak je sljedeće:
+1. Pomoću naučenih jQuery efekata izraditi komponentu koja se može primijeniti u radu nekog web rješenja.
+Opis komponente:
+dio sadržaja je sakrivene te se isti prikazuje klikom na sekciju iznad.
+Kod njene izrade slijedite sljedeće korake:
+ - kreirajte potreban HTML kod za sve sekcije (vidljive i one sakrivene)
+ - pomoću CSS-a uredite elemente i početno sakrijte sekcije s podacima (svaku drugu sekciju)
+ - unutar skripte dohvatite vidljive sekcije i postavite im valjani događaj - klik miša
+ - kada događaj nastupi poziva se metoda koja će prikazati do tada sakrivenu susjednu sekciju (ponovni klik ponovo sakriva sekciju)
+2. Izradite jQuery animaciju s parametrima po vašem odabiru. U njezin rad uključite više koraka, unutar kojih će se mijenjati zadani stilovi.
+U sklopu rada animacije, prvi paragraf s tekstom se postepeno sakrije, dok se drugi prikaže.
+Animacija se pokreće kada pokazivač miša uđe unutar granica HTML elementa - mouseenter. 

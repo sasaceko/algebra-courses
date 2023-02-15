@@ -1,0 +1,36 @@
+@import '../base/media';
+
+@mixin flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+@mixin background-img($src) {
+    background: url(#{$src}) no-repeat center center/cover fixed;
+}
+
+@mixin div-style {
+    width: 30%;
+    padding: 0.8em 0;
+    text-align: center;
+    font-size: 7em;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+    @include respondTo(mobile) {
+        width: 60%;
+        padding: 0.4em 0;
+      }
+}
+
+@mixin keyframes($animation-name) {
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    animation: #{$str};
+}

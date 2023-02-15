@@ -1,0 +1,27 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+li {
+    display: inline-block;
+    width: 20%;
+    background-color: #ffc;
+}
+
+p {
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 0;
+    margin-left: -6px;
+}

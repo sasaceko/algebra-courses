@@ -1,0 +1,106 @@
+#zaglavlje {
+    justify-content: space-between;
+    display: flex;
+    background-color: red;
+}
+
+#logo {
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    margin-right: 20px;
+}
+
+header ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 15px;
+    background-color: white;
+    height: 10px;
+    margin-left: 5px;
+}
+
+main header {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.mt-150 {
+    margin-top: 130px;
+}
+
+.text-white {
+    color: white;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.text-4xl {
+    font-size: 80px;
+}
+
+.flex {
+    display: flex;
+}
+
+.no-decoration {
+    list-style: none;
+}
+
+.link-red {
+    color: red;
+}
+
+.px-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.list-margin {
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.content-center {
+    place-content: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.ml-16 {
+    margin-left: 20%;
+}
+
+.float-left {
+    float: left;
+}
+
+input, select {
+    width: 100%;
+    height: 30px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}

@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+div {
+  background-color: rgb(150, 150, 0);
+  margin: 1em auto;
+  padding: 1em;
+  width: 25%;
+}
+div:first-child {
+  -webkit-animation: fade 2s ease-in-out infinite;
+          animation: fade 2s ease-in-out infinite;
+}
+div:nth-child(2) {
+  -webkit-animation: fade 4s linear 2s infinite;
+          animation: fade 4s linear 2s infinite;
+}
+div:nth-child(3) {
+  transition: background-color 0.5s ease-in;
+}
+div:nth-child(3):hover {
+  background-color: rgb(150, 0, 0);
+}
+div:nth-child(4) {
+  transition: width 1s linear;
+}
+div:nth-child(4):hover {
+  width: 80%;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

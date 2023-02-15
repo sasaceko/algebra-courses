@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedijski sadrzaj</title>
+</head>
+<body>
+    <h1>Multimedijski sadrzaj</h1>
+    <h3>Video sadrzaj</h3>
+    <!-- <video controls width="560" height="320" poster="slike/algebra-logo.jpg">
+        <source src="video/movie.mp4" type="video/mp4" />
+        <source src="video/movie.ogv" type="video/ogg" />
+        <source src="video/movie.webm" type="video/webm" />
+    </video> -->
+    <video src="video/movie.mp4" controls width="560" height="320" poster="slike/algebra-logo.jpg"></video>
+    <h3>Audio sadrzaj</h3>
+    <!-- <audio controls>
+        <source src="audio/music.mp3" type="audio/mpeg" />
+        <source src="audio/music.ogg" type="audio/ogg" />
+        <source src="audio/music.wav" type="audio/wav" />
+    </audio> -->
+    <audio src="audio/music.mp3" controls></audio>
+    <h3>Video sadrzaj - iframe (HTML sadrzaj)</h3>
+    <!-- <iframe src="https://algebra.hr/" width="560" height="320"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/?playlist=kt4Z2AA5Kj0,Y1v4XaHi5Cg,akjAt3VQAqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Ne-HTML sadrzaj</h3>
+    <object data="dokumenti/pdf-dokument.pdf" width="600" height="600"></object>
+    <br>
+    <a href="dokumenti/pdf-dokument.pdf" target="_blank" title="PDF dokument">PDF dokument</a>
+</body>
+</html>

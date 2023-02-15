@@ -1,0 +1,12 @@
+.user {
+    border: 1px solid lightgray;
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin: 20px 5px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraš</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="zaglavlje">
+        <div id="logo">
+            <a href="index.html" title="pocetna">
+                <img src="slike/kras_logo_header.png" alt="Logo Kraš" width="70px" height="50px" />
+            </a>
+        </div>
+        <nav id="navigacija">
+            <ul>
+                <li><a href="index.html">Pocetna</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <div class="absolute text-center w-full mt-150">
+                <h1 class="text-white bold text-4xl">Kontakt</h1>
+            </div>
+            <img src="slike/1920x400.jpg" alt="Kraš tvornica" width="1920px" height="400px">
+        </header>
+        <section class="flex px-10 content-center">
+            <h2 class="bold text-4xl">Kontakt</h2>
+            <div>
+                <ul class="no-decoration list-margin">
+                    <li>KRAŠ prehrambena industrija d.d.</li>
+                    <li>Ravnice 48</li>
+                    <li>10000 Zagreb</li>
+                    <li>Hrvatska</li>
+                    <li>Telefon: +385 1 2396 111</li>
+                    <li><a href="#" class="link-red">Lokacija Kraša na karti</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="px-10 ml-16">
+            <form action="“includes/obrazac.php" method="post" enctype="multipart/form-data" autocomplete="off">
+                
+                    <p class="link-red">KONTAKTNI OBRAZAC</p>
+                    <div class="float-left w-50">
+                        <label for="imePrezime">Ime i prezime:*</label><br>
+                        <input type="text" name="imePrezime" id="imePrezime">
+                    </div>
+                    <div class="float-left w-50">
+                        <label for="email">E-mail:*</label><br>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="adresa">Adresa i grad:*</label><br>
+                        <input type="text" name="adresa" id="adresa">
+                    </div>
+                    <div class="float-left w-50">
+                        <label for="telefon">Telefon:*</label><br>
+                        <input type="text" name="telefon" id="telefon">
+                    </div>
+                    <div class="float-left w-50">
+                        <label for="tvrtka">Tvrtka:*</label><br>
+                        <input type="text" name="tvrtka" id="tvrtka">
+                        </div>
+                    <div>
+                        <label for="kontakt">Želim kontaktirati:*</label><br>
+                        <select id="kontakt" name="kontakt">
+                            <option value="uvoz">Uvoz</option>
+                            <option value="izvoz">Izvoz</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="prodaja">Prodaja</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="poruka">Poruka:*</label><br>
+                        <textarea id="poruka" name="poruka" rows="4" cols="50"></textarea> 
+                    </div> 
+                    <button type="submit">U redu</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

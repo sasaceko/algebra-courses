@@ -1,0 +1,21 @@
+@mixin flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@mixin txt {
+    text-align: $txt-align;
+    text-shadow: $txt-shadow;
+}
+
+@mixin keyframes($animation-name) {
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    animation: #{$str};
+}

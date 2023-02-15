@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava na tecaj</title>
+</head>
+<body>
+    <header>
+        <h1>Prijava na tecaj</h1>
+    </header>
+    <body>
+        <form action="“includes/prijava-korisnika.php" method="post" enctype="multipart/form-data" autocomplete="off">
+            <fieldset>
+                <legend>Prijava na tecaj</legend>
+                <label for="imePrezime">Ime i prezime: *</label>
+                <br />
+                <input type="text" name="imePrezime" id="imePrezime" autofocus required>
+                <br />
+                <br />
+                <label for="datum">Mjesec i godina rođenja:*</label>
+                <br />
+                <input type="month" name="datum" id="datum" required min="2004-09">
+                <br />
+                <br />
+                <label for="mob">Kontakt broj telefona:*</label>
+                <br />
+                <input type="tel" name="mob" id="mob">
+                <br />
+                <br />
+                <label for="web">Web adresa:</label>
+                <br />
+                <input type="url" name="web" id="web">
+                <br />
+                <br />
+                <label for="spol">Spol:*</label>
+                <br />
+                <input type="text" name="spol" id="spol" list="listaKratica" />
+                    <datalist id="listaKratica">
+                        <option value="Musko" />
+                        <option value="Zensko" />
+                    </datalist>
+                <br />
+                <br />
+                <label for="dokumentacija">Dokumentacija:</label>
+                <br />
+                <input type="file" name="dokumentacija" id="dokumentacija" multiple />
+                <br />
+                <br />
+                <label for="tecaj">Zelim upisati:</label>
+                <br />
+                <input type="checkbox" name="frontend" id="frontend" value="1">
+                <label for="frontend">Front-End Developer</label>
+                <br />
+                <input type="checkbox" name="backend" id="backend" value="2">
+                <label for="backend">Back-End Developer</label>
+                <br />
+                <input type="checkbox" name="cisco" id="cisco" value="3">
+                <label for="cisco">CISCO</label>
+                <br />
+                <br />
+                <label for="usluge">Da li ste do sada koristili usluge nase tvrtke?</label>
+                <br />
+                <label for="da">Da</label>
+                <input type="radio" name="usluge" id="da" value="1" required />
+                <label for="ne">Ne</label>
+                <input type="radio" name="usluge" id="ne" value="2" required />
+                <br />
+                <br />
+                <label for="adresa">Vasa E-mail adresa:</label>
+                <br />
+                <input type="email" name="adresa" id="adresa" placeholder="simple@example.com">
+                <br />
+                <br />
+                <label for="brojRazreda">Broj zavrsenih razreda srednje skole:*</label>
+                <br />
+                <input type="number" name="brojRazreda" id="brojRazreda" min="0" max="4" value="4" required />
+                <br />
+                <br />
+                <label for="vrijeme">Vrijeme registracije:*</label>
+                <br />
+                <input type="time" name="vrijeme" id="vrijeme" required>
+                <br />
+                <br />
+                <label for="komentar">Dodatan komentar:</label>
+                <br />
+                <textarea name="komentar" id="komentar" cols="30" rows="10"></textarea>
+                <br />
+                <br />
+                <button type="reset">Poništi</button>
+                <button type="submit">U redu</button>
+            </fieldset>
+        </form>
+    </body>
+</body>
+</html>

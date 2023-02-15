@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser okolina - BOM</title>
+    <script src="js/script.js"></script>
+</head>
+<body onload="vrijeme(), sat1(), sat2()">
+    <header>
+        <h1>Browser okolina</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Intervalni poziv funkcije</h3>
+            <div id="sat1"></div>
+            <button onclick="zaustaviSat()">Zaustavi</button>
+        </section>
+        <hr />
+        <section>
+            <h3>Poziv funkcije s odgodom</h3>
+            <p id="sat2"></p>
+        </section>
+        <hr />
+        <section>
+            <h3>Interaktivne forme</h3>
+            <button type="button" onclick="pozdrav()">Alert</button>
+            <button type="button" onclick="odabirOpcije()">Confirm</button>
+            <button type="button" onclick="ocjena()">Prompt</button>
+        </section>
+        <hr />
+        <section>
+            <button type="button" onclick="otvori()">Otvori</button>
+            <button type="button" onclick="zatvori()">Zatvori</button>
+        </section>
+        <hr />
+        <section>
+            <h3>Navigacija</h3>
+            <button type="button" onclick="zaslon()">Karakteristike zaslona</button>
+        </section>
+    </main>
+</body>
+</html>

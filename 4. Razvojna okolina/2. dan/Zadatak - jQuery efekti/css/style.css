@@ -1,0 +1,43 @@
+h1{
+	text-align: center;
+	color: rgba(0,0,0,0.7);
+	text-transform: uppercase;
+}
+
+.zaglavlje, .podnozje{
+	width: 50%;
+	margin: auto;
+	border: 1px solid rgba(0,0,0,0.7);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.zaglavlje{
+	cursor: pointer;
+}
+
+.zaglavlje p{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.podnozje{
+	display: none;
+}
+
+#oglas{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+#oglas p:nth-child(2){
+	display: none;
+}

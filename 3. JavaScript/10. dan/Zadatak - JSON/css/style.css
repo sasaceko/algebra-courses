@@ -1,0 +1,11 @@
+.user {
+    border: 1px solid red;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

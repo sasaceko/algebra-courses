@@ -1,0 +1,86 @@
+// varijable
+$color-1: #eee;
+$color-2: #333;
+$color-3: #800;
+
+$font-1: Tahoma, sans-serif;
+$font-2: Courier, monospace;
+
+// mixin
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin a-button {
+    a{
+        background-color: $color-2;
+        color: $color-1;
+        display: inline-block;
+        padding: 10px;
+        &:visited {
+            background-color: #f93;
+        }
+        &:hover {
+            background-color: $color-3;
+        }
+    }
+}
+
+// mixin sa ulaznim argumentima
+@mixin align-element($display, $txt, $space) {
+    display: $display;
+    text-align: $txt;
+    margin: $space;
+}
+
+body {
+    background-color: $color-1;
+    color: $color-2;
+    font-family: $font-1;
+}
+
+header {
+    a {
+        @include align-element(block, center, 1em auto);
+        background-color: $color-2;
+        color: $color-1;
+        padding: 10px;
+        width: 300px;
+    }
+}
+
+section {
+    @include flex-container();
+    background-color: $color-3;
+    padding: 1em;
+    article {
+        flex-basis: 48%;
+        background-color: $color-1;
+        a {
+            @include align-element(inlcine-block, right, 1em 50px)
+        }
+    }
+}
+
+footer {
+    @include a-button();
+}
+
+// extend
+.borders {
+    border: 2px solid $color-2;
+}
+
+// placeholder
+%spaces {
+    padding: 1em;
+    margin: 1em;
+}
+
+header, footer {
+    @extend .borders;
+    @extend %spaces;
+    background-color: wheat;
+}

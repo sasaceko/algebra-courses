@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+div {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: orange;
+}
+
+div:first-of-type {
+    border-radius: 20px;
+    /* border-radius: 10px 50px 90px 30px; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+div:nth-of-type(2){
+    overflow: auto;
+}
+
+div:nth-of-type(3){
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+div:nth-of-type(4){
+    overflow: auto;
+    resize: horizontal;
+    opacity: 0.6;
+}

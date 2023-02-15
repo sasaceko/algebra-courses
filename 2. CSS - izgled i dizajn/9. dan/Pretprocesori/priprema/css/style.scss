@@ -1,0 +1,32 @@
+@import 'base/variables';
+@import 'abstracts/mixins';
+
+body {
+    background-color: $color-1;
+    main {
+        @include flex-container;
+    }
+    h1 {
+        color: $color-3;
+        font: $font-h1;
+        @include txt();
+        @include animation('fadein 1.5s ease-in 1s backwards');
+    }
+    h3 {
+        color: $color-2;
+        font: $font-h3;
+        @include txt();
+        @include animation('fadein 1.5s ease-in 2.5s backwards');
+
+    }
+}
+
+@include keyframes(fadein) {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

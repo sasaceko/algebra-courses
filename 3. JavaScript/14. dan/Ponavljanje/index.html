@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-ponavljanje</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pretraga filmova po godini izlaska</h1>
+    </header>
+    <main>
+        <label for="pocetna">Pocetna godina:</label>
+        <input id="pocetna" type="text" />
+        <br />
+        <br />
+        <label for="zavrsna">Zavrsna godina:</label>
+        <input id="zavrsna" type="text" />
+        <br />
+        <br />
+        <button type="submit" onclick="filmovi()">Traži</button>
+        <br />
+        <br />
+        <div id="podaciFilmova"></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

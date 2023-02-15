@@ -1,0 +1,50 @@
+.loading {
+    background-color: white;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+#loading svg {
+    justify-content: center;
+}
+
+table {
+    margin-top: 20px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+    width: 150px;
+}
+
+th:last-of-type {
+    width: 80px;
+}
+
+tr:last-of-type {
+    text-align: end;
+    font-weight: bold;
+}
+
+tr td:last-of-type {
+    text-align: end;
+}
